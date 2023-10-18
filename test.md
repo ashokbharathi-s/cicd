@@ -1,23 +1,42 @@
-  ----------------------------------------------------------------------------------------------------------------------------------------------
-  Status                              Published
-  ----------------------------------- ----------------------------------------------------------------------------------------------------------
-  Author                              Sarankumar Chandrasekaran
---------------------------:|--------------------------------------
-|  SLO Adoption Leader     |           Balachandar Natarajan
---------------------------:|--------------------------------------
-  SLI/SLO Owner            |           Saiprasad Potluri/Ratna Puttaswamy
---------------------------:|--------------------------------------
-  SLI/SLO Approvers:       |           Muthupalaniappan V/Mathivanan V
---------------------------:|--------------------------------------
-  Approval Date            |           10/09/2023
---------------------------:|--------------------------------------
-  Revisit Date             |           01/09/2024
---------------------------:|--------------------------------------
-  Ford Github URL          |      To be included \<saran\>
---------------------------:|--------------------------------------
-  API Catalog URL                     [API Catalog URL for Dealer
-                                      Search](https://api-viewer.apiplatform.ford.com/viewer?apiId=9533&urls.primaryName=PROD%20NA%20(APIGEE))
-  ----------------------------------------------------------------------------------------------------------------------------------------------
+<H1 align="center">Dealer search service - SLO objectives</H1>
+<table>
+  <tr>
+    <td>Author</td>
+    <td>Sarankumar Chandrasekaran</td>
+  </tr>
+  <tr>
+    <td>SLO Adopation Leader</td>
+    <td>Balachandar Natarajan</td>
+  </tr>
+  <tr>
+    <td>SLI/SLO Owner</td>
+    <td>Saiprasad Potluri/Ratna Puttaswamy</td>
+  </tr>
+  <tr>
+    <td>SLI/SLO Approvers</td>
+    <td>Muthupalaniappan V/Mathivanan V </td>
+  </tr>
+  <tr>
+    <td>Approval Date </td>
+    <td>10/09/2023</td>
+  </tr>
+  <tr>
+    <td>Revisit Date </td>
+    <td>01/09/2024</td>
+  </tr>
+  <tr>
+    <td>Approval Date </td>
+    <td>10/09/2023</td>
+  </tr>
+  <tr>
+    <td>Ford Github URL</td>
+    <td>To be included</td>
+  </tr>
+  <tr>
+    <td>API Catalog URL</td>
+    <td>API Catalog URL for Dealer Search</td>
+  </tr>
+</table>
 
 # **Service Overview**
 
@@ -78,18 +97,28 @@ rolling 28-day window.*
 **SLO**: Percentage of successful requests. For example, an SLO of 99.5%
 means that at least 995 out of 1000 requests should have a non-500
 response code for a rolling window of 28 days.
-
-  ------------------------------------------------------------------------
-  DealerSearchV1     99.5% Success
-  ------------------ -----------------------------------------------------
-  DealerSearchV4     99.5% Success
-
-  DealerSearchV5     99.5% Success
-
-  AutoSelectDealer   99.5% Success
-
-  LeadTimeSearch     99.5% Success
-  ------------------------------------------------------------------------
+<table>
+  <tr>
+    <td>DealerSearchV1</td>
+    <td>99.5% Success</td>
+  </tr>
+  <tr>
+    <td>DealerSearchV4</td>
+    <td>99.5% Success</td>
+  </tr>
+  <tr>
+    <td>DealerSearchV5</td>
+    <td>99.5% Success</td>
+  </tr>
+  <tr>
+    <td>AutoSelectDealer</td>
+    <td>99.5% Success</td>
+  </tr>
+  <tr>
+    <td>LeadTimeSearch</td>
+    <td>99.5% Success</td>
+  </tr>
+</table>
 
 # **SLI/SLO: Latency**
 
@@ -123,6 +152,7 @@ requests \>= 99%.*
 measurement. This means that all the requests received in the entire
 28-day compliance window are treated as one bucket. There are no
 multi-window-based measurements.
+
 
 +----------------+-----------------------------------------------------+
 | DealerSearchV1 | 90 % of requests \< 100 ms                          |
@@ -166,18 +196,28 @@ requests within a specified period. The idea is to ensure that the
 system can handle the expected workload without experiencing performance
 degradation (latency) or failure (availability) as per established
 thresholds.
-
-  ------------------------------------------------------------------------
-  DealerSearchV1     TPS
-  ------------------ -----------------------------------------------------
-  DealerSearchV4     15 TPS
-
-  DealerSearchV5     15 TPS
-
-  AutoSelectDealer   15 TPS
-
-  LeadTimeSearch     15 TPS
-  ------------------------------------------------------------------------
+<table>
+  <tr>
+    <td>DealerSearchV1</td>
+    <td>TPS</td>
+  </tr>
+  <tr>
+    <td>DealerSearchV4</td>
+    <td>15 TPS</td>
+  </tr>
+  <tr>
+    <td>DealerSearchV5</td>
+    <td>15 TPS</td>
+  </tr>
+  <tr>
+    <td>AutoSelectDealer</td>
+    <td>15 TPS</td>
+  </tr>
+  <tr>
+    <td>LeadTimeSearch</td>
+    <td>15 TPS</td>
+  </tr>
+</table>
 
 # **Rationale**
 
