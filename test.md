@@ -2,19 +2,19 @@
   Status                              Published
   ----------------------------------- ----------------------------------------------------------------------------------------------------------
   Author                              Sarankumar Chandrasekaran
-
-  SLO Adoption Leader                 Balachandar Natarajan
-
-  SLI/SLO Owner                       Saiprasad Potluri/Ratna Puttaswamy
-
-  SLI/SLO Approvers:                  Muthupalaniappan V/Mathivanan V
-
-  Approval Date                       10/09/2023
-
-  Revisit Date                        01/09/2024
-
-  F**ord Github URL**                 To be included \<saran\>
-
+--------------------------:|--------------------------------------
+|  SLO Adoption Leader     |           Balachandar Natarajan
+--------------------------:|--------------------------------------
+  SLI/SLO Owner            |           Saiprasad Potluri/Ratna Puttaswamy
+--------------------------:|--------------------------------------
+  SLI/SLO Approvers:       |           Muthupalaniappan V/Mathivanan V
+--------------------------:|--------------------------------------
+  Approval Date            |           10/09/2023
+--------------------------:|--------------------------------------
+  Revisit Date             |           01/09/2024
+--------------------------:|--------------------------------------
+  Ford Github URL          |      To be included \<saran\>
+--------------------------:|--------------------------------------
   API Catalog URL                     [API Catalog URL for Dealer
                                       Search](https://api-viewer.apiplatform.ford.com/viewer?apiId=9533&urls.primaryName=PROD%20NA%20(APIGEE))
   ----------------------------------------------------------------------------------------------------------------------------------------------
