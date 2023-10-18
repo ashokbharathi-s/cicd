@@ -153,28 +153,28 @@ measurement. This means that all the requests received in the entire
 28-day compliance window are treated as one bucket. There are no
 multi-window-based measurements.
 
-
-+----------------+-----------------------------------------------------+
-| DealerSearchV1 | 90 % of requests \< 100 ms                          |
-|                |                                                     |
-|                | 99% of requests \< 275 ms                           |
-+================+=====================================================+
-| DealerSearchV4 | 90 % of requests \< 75 ms                           |
-|                |                                                     |
-|                | 99% of requests \< 550 ms                           |
-+----------------+-----------------------------------------------------+
-| DealerSearchV5 | 90 % of requests \< 200 ms                          |
-|                |                                                     |
-|                | 99% of requests \< 625 ms                           |
-+----------------+-----------------------------------------------------+
-| Au             | 90 % of requests \< 450 ms                          |
-| toSelectDealer |                                                     |
-|                | 99% of requests \< 875 ms                           |
-+----------------+-----------------------------------------------------+
-| LeadTimeSearch | 90 % of requests \< 50 ms                           |
-|                |                                                     |
-|                | 99% of requests \< 75 ms                            |
-+----------------+-----------------------------------------------------+
+<table>
+  <tr>
+    <td>DealerSearchV1</td>
+    <td>90 % of requests \< 100 ms<br> 99% of requests \< 275 ms  </td>
+  </tr>
+  <tr>
+    <td>DealerSearchV4</td>
+    <td>90 % of requests \< 75 ms <br> 99% of requests \< 550 ms</td>
+  </tr>
+  <tr>
+    <td>DealerSearchV5</td>
+    <td>90 % of requests \< 200 ms <br> 99% of requests \< 625 ms </td>
+  </tr>
+  <tr>
+    <td>AutoSelectDealer</td>
+    <td>90 % of requests \< 450 ms <br> 99% of requests \< 875 ms </td>
+  </tr>
+  <tr>
+    <td>LeadTimeSearch</td>
+    <td>90 % of requests \< 50 ms <br> 99% of requests \< 75 ms  </td>
+  </tr>
+</table>
 
 # **SLI/SLO: Throughput**
 
