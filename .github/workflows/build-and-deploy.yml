@@ -52,8 +52,4 @@ jobs:
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
-          gcloud run deploy sample \
-            --image gcr.io/durable-catbird-340811/sample:$IMAGE_TAG \
-            --platform managed \
-            --region us-central1 \
-            --allow-unauthenticated
+          gcloud run deploy sample --image gcr.io/durable-catbird-340811/sample:$IMAGE_TAG --platform managed --region us-central1 --allow-unauthenticated --project durable-catbird-340811
