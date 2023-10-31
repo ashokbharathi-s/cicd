@@ -22,7 +22,8 @@ jobs:
 
       - name: Configure Docker authentication
         run: |
-          gcloud auth activate-service-account --key-file=key.json
+          echo ${{ secrets.GCP_SA_KEY }} > key1.json
+          gcloud auth activate-service-account --key-file=key1.json
           gcloud auth configure-docker gcr.io
 
   #    - name: Set up JDK 11
