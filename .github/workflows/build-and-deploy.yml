@@ -19,6 +19,7 @@ jobs:
           curl https://sdk.cloud.google.com > install.sh
           bash install.sh --disable-prompts
       #    gcloud init --skip-diagnostics
+
       - name: Configure Docker authentication
         run: |
           gcloud auth activate-service-account --key-file=key.json
@@ -70,6 +71,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install Google Cloud SDK
+        run: |
+          curl https://sdk.cloud.google.com > install.sh
+          bash install.sh --disable-prompts
+          gcloud auth activate-service-account --key-file=key.json
+
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
@@ -88,6 +95,12 @@ jobs:
     steps:    
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Install Google Cloud SDK
+        run: |
+          curl https://sdk.cloud.google.com > install.sh
+          bash install.sh --disable-prompts
+          gcloud auth activate-service-account --key-file=key.json
 
       - name: Deploy Docker image to Cloud Run
         run: |
