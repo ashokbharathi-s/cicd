@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: google/cloud-sdk:latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
