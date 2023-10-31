@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: dev
+ #   environment: dev
 
     steps:
       - name: Checkout code
@@ -67,6 +67,9 @@ jobs:
  #     url: ${ { steps.deploy-to-webapp.outputs.webapp-url } }
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
@@ -82,7 +85,10 @@ jobs:
       name: "production"
  #     url: ${ { steps.deploy-to-webapp.outputs.webapp-url } }
 
-    steps:
+    steps:    
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
