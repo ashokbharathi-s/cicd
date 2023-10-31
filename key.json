@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "durable-catbird-340811",
+  "private_key_id": "6c125b0f08749d43205689984a320b0b9bb9d5d0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbl8MfGUng8FCp\nDJVbLZ3o1Q4wnmszXPqDxs2freJM8Ds6WlpEKPO+TvoauEebsWqc8Bo0B4GlBwzT\nylET+yMy0MGUkgvGs121VnOstFkF+FN+NQgn6Qh5/mqpc/6xEunJotG6sqB0zgv0\nsQkUwKbOuGq4vbFyKrrB8g14GTCN9AUjebuYfAbJCPnPDIBqskNGJ4ET5JrWv8mn\nTaEOM/fb3LKAc85TJ1sy8y8AfX/lYO7+Ql8Y6A3tGWCV8IA9/VxzXagZL9TGcjKz\n9Mt+dVMFAiNn4Ew2j1TDQcYQ13JLMKL4QalLUGyGAgVMLvO6ZPvDxBAkkrJp4ZpX\nrZHGTA+xAgMBAAECggEAQfODi7yJnsAuSYdY+ChsK7iJaXq60ZNUPe2gZhvQQrFH\n6I+oWp4+DmMj5JCCGTWgwn+uLwAuJMVISfeSgEDF4oYmDZwLY2MNet/7H9yOfCeH\n0/jTeUEY5aLOoBQRY1c91exLtxnc7RfRKW1eP9hYgO+MRe3a9GH28zbiaraOCaO4\neb01ENFKO3zhAlxe7Sjgj5Mdtmen9Aazpzqwoiih+7beH0m+2Km2QZ/9hv3fzaPv\nodrRdykvCAtWBRwJ2I1rQWWjS6bzshKOQLH03C3DG9MhFL6V1q0+jrl/4vRkC3K1\nTttyMg3SdCWV5m2j4D/CJ0gqX/rM/LgGNXK1AEDBrQKBgQD+wwC9j1dCSippVn4Q\nxZHg3eMFaZNIQGKJfM8lpKgVZZuAnsZoGScbqxAhz/YAz53PjuBX9K/m8V86i4/n\n5/sRPO+0+MY+y7aYyi3xe2T0ox8Iaqt7Qu/ndChdWAclWTbnKNuyOmd2dv4wERZg\n0Qji3kuB2uce22tSLRsinX2svwKBgQDcqP/AZjYDWBwQXslJAoa1GDFfkLQqJ8cI\nqBpcz5Asv5/REyQ1b2jy3kHt7Es3MX6kUlWXALRBIr2le2MRGnafj1PxALnrmTxH\nog7irBwYs2gU3WXKL182bGa/qYB4Bg9rBYh4P+anCKDhrXO3jSNOoyKq7Oh4uyao\nwb5Zon6vjwKBgQCijxd33XEWcXCiingih47P54WmvHkoTz0Q8bzUDj7aeF1DMwzy\n+6nCs+K1UJduaQwPluF7/jwHptjW6JrIpXPEyhdCaMNG6oH2+HtcbRo8J6Hzou0M\n1+dwzuO6vCLDKCwqUB3vmejO5JrJXP3khT2gVavkjiOPwv62DuYTrl60zQKBgFga\nZhs09EX7jSEAJ5AuIQj3gucsSLM4NKEBNZ1vBprHXBFHekKXnCi0k1Bi81kzOuRz\nN1dWYaJMM7p5/IEcttZYjOSCLLmj8kyLqTPaElHOeDU0fOrwZSy+tXu7Ot8xVECf\n8fBJW1e/+zSAY96azMkeG75xXxStbO8ehFkXp0uDAoGAZ5eAlJITnsksYPZagzW8\nA2k543Gh5L78WczKdz6Hjy6gj0mHS5SPp9BXA7qGK1rNYZsQuphIrH0m/fVYuYqM\nyUEHPEIxAX01lUUkzUFmAjp7ydROGXxOyOTG3W3Ec1NehJ+1j7IDJpLy73lor1ei\nlLdChJMfNxfCKBhdbgU2BNY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "git-pipeline@durable-catbird-340811.iam.gserviceaccount.com",
+  "client_id": "117671660254968729663",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/git-pipeline%40durable-catbird-340811.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
