@@ -38,7 +38,7 @@ jobs:
         run: |
           echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key.json
           gcloud auth activate-service-account --key-file=key.json
-          gcloud auth configure-docker gcr.io
+       #   gcloud auth configure-docker gcr.io
 
       - name: Push Docker image to GCR
         run: |
