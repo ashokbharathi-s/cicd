@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: dev
 
     steps:
       - name: Checkout code
@@ -49,6 +50,7 @@ jobs:
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
           docker push gcr.io/durable-catbird-340811/sample:$IMAGE_TAG
+
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
