@@ -17,7 +17,7 @@ jobs:
         run: |
           curl https://sdk.cloud.google.com > install.sh
           bash install.sh --disable-prompts
-          gcloud init
+          gcloud init --skip-diagnostics
       - name: Configure Docker authentication
         run: |
           echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key.json
