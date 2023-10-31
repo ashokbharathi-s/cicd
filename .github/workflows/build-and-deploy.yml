@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
  #   environment: dev
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -18,12 +17,11 @@ jobs:
         run: |
           curl https://sdk.cloud.google.com > install.sh
           bash install.sh --disable-prompts
-      #    gcloud init --skip-diagnostics
 
       - name: Configure Docker authentication
         run: |
-          echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key1.json
-          gcloud auth activate-service-account --key-file=key1.json
+          echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key.json
+          gcloud auth activate-service-account --key-file=key.json
           gcloud auth configure-docker gcr.io
 
   #    - name: Set up JDK 11
@@ -76,6 +74,7 @@ jobs:
         run: |
           curl https://sdk.cloud.google.com > install.sh
           bash install.sh --disable-prompts
+          echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key.json
           gcloud auth activate-service-account --key-file=key.json
 
       - name: Deploy Docker image to Cloud Run
@@ -101,6 +100,7 @@ jobs:
         run: |
           curl https://sdk.cloud.google.com > install.sh
           bash install.sh --disable-prompts
+          echo ${{ secrets.GCP_SA_KEY }} | base64 --decode > key.json
           gcloud auth activate-service-account --key-file=key.json
 
       - name: Deploy Docker image to Cloud Run
