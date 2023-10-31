@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     environment: dev
 
@@ -51,7 +51,39 @@ jobs:
           IMAGE_TAG=$(git rev-parse --short HEAD)
           docker push gcr.io/durable-catbird-340811/sample:$IMAGE_TAG
 
+ #     - name: Deploy Docker image to Cloud Run
+ #       run: |
+ #         IMAGE_TAG=$(git rev-parse --short HEAD)
+ #         gcloud run deploy sample --image gcr.io/durable-catbird-340811/sample:$IMAGE_TAG --platform managed --region us-central1 --allow-unauthenticated --project durable-catbird-340811
+
+  deployDev:
+    name: Deploy to Dev
+    permissions:
+      contents: none
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: "dev"
+ #     url: ${ { steps.deploy-to-webapp.outputs.webapp-url } }
+
+    steps:
       - name: Deploy Docker image to Cloud Run
         run: |
           IMAGE_TAG=$(git rev-parse --short HEAD)
           gcloud run deploy sample --image gcr.io/durable-catbird-340811/sample:$IMAGE_TAG --platform managed --region us-central1 --allow-unauthenticated --project durable-catbird-340811
+
+  deployprod:
+    name: Deploy to Prod
+    permissions:
+      contents: none
+    runs-on: ubuntu-latest
+    needs: deployDev
+    environment:
+      name: "production"
+ #     url: ${ { steps.deploy-to-webapp.outputs.webapp-url } }
+
+    steps:
+      - name: Deploy Docker image to Cloud Run
+        run: |
+          IMAGE_TAG=$(git rev-parse --short HEAD)
+          gcloud run deploy sample-prod --image gcr.io/durable-catbird-340811/sample:$IMAGE_TAG --platform managed --region us-central1 --allow-unauthenticated --project durable-catbird-340811
